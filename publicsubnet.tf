@@ -33,3 +33,5 @@ resource "aws_subnet" "subnetThree"{
         Name="Public subnetThree"
     }
 }
+
+# add new argument map_public_ip_on_lunch = true so that he has an ip address 

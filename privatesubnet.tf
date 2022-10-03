@@ -4,14 +4,10 @@ resource "aws_subnet" "pSubnetOne" {
     aws_vpc.main,
     aws_subnet.subnetOne
   ]
-  
-  
-  vpc_id = aws_vpc.main.id
-  
- 
-  cidr_block = "192.168.11.0/24"
-  
 
+  vpc_id = aws_vpc.main.id
+
+  cidr_block = "192.168.11.0/24"
   availability_zone = "eu-central-1a"
   
   tags = {
@@ -44,14 +40,10 @@ resource "aws_subnet" "pSubnetThree" {
     aws_vpc.main,
     aws_subnet.subnetOne
   ]
-  
-  
+   
   vpc_id = aws_vpc.main.id
-  
- 
-  cidr_block = "192.168.13.0/24"
-  
 
+  cidr_block = "192.168.13.0/24"
   availability_zone = "eu-central-1c"
   
   tags = {
