@@ -1,7 +1,7 @@
 resource "aws_nat_gateway" "nat_gateway" {
   allocation_id = aws_eip.nat_eip.id  # aws_wip the term for the creation of public ip addresses. it fives you an ip address. you pay if you dont use the ip 
   subnet_id     = aws_subnet.subnetOne.id
-  connectivity_type = public
+  
 
   tags = {
     Name = "gw NAT"
@@ -15,7 +15,7 @@ resource "aws_nat_gateway" "nat_gateway" {
 
 #create elastic ip 
 
-resource "aws_eip " " nat_eip" {
+resource "aws_eip" "nat_eip" {
     vpc = true 
     #we have to declare where it will be
 
